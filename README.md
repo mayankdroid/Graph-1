@@ -86,8 +86,8 @@ Here is an example of a concrete class.
        });
  ```
 
- ### Operations on the graph
- ------------------------------
+### Operations on the graph
+------------------------------
 
  Currently you can do Breadth First Search and Depth First Search on the graphs.
  To do a BFS
@@ -101,8 +101,8 @@ Here is an example of a concrete class.
         graph.doDFS();
   ```
 
-  ### Finishing a graph traversal prematurely.
-  ---------------------------------------------
+### Finishing a graph traversal prematurely.
+---------------------------------------------
   In certain cases you may want to abort the traversal prematurely. e.g. You want to find the shortest path from one node to another.
   for this you do BFS starting from one node. Once you reach the destination node, there is no need to continue the traversal.
   All you have to do is to call abort traversal from one of the callbacks in the plugable interface.
@@ -113,31 +113,31 @@ Here is an example of a concrete class.
 ```
 Check the description in the section below.
 
- ### Completing the graph traversal.
- -----------------------------------
+### Completing the graph traversal.
+-----------------------------------
 
- #### RESET API
- ---------------
+#### RESET API
+---------------
  You may want to do multiple traversals on the same graph. This can be done by calling graph.resetGraph(). This resets the graph
  and the graph is ready for a new graph traversal. Also ensure that resetNode callback removes all traversal related information
  from the node which you may have added dureing the traversal.
 
- ### Other Useful Apis
- ---------------------
+### Other Useful Apis
+---------------------
 
  Here are a few other utility apis which are useful
 
- #### abortTraversal
- --------------------
+#### abortTraversal
+--------------------
   Aborts the current traversal when called from a callback method of your custom action. This will internally call the resetGraph() api which will remove all traversal related information from the graph. One invoked you cannot resume the
   graph traversal. Check examples/ShortestDistance.java for further details.
 
- #### getNodeWithId
- -------------------
+#### getNodeWithId
+-------------------
  Returns the node reference given the hashcode of the object. check example/ShortestDistance.java for details.
 
- ##Contributors
- ---------------
+##Contributors
+---------------
  Rohit Kalhans <mailto:rohit.kalhans@gmail.com>
 
- Feel free to contrubute and feedback is welcome.
+Feel free to contrubute and feedback is welcome.
