@@ -5,7 +5,7 @@ package graph;
  */
 public interface Plugable {
 
-    public void forEachNode(Node n);
-    public void forEachChildren(Node parent, Node children);
+    void forEachNode(Node n);
+    void forEachParentChildPair(Node parent, Node child);
     void resetNode(Node n);
 }

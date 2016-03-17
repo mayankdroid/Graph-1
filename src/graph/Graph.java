@@ -1,7 +1,5 @@
 package graph;
 
-import examples.ShortestDistance;
-
 import java.util.*;
 
 /**
@@ -25,7 +23,7 @@ public class Graph<T> {
             }
 
             @Override
-            public void forEachChildren(Node parent, Node children) {
+            public void forEachParentChildPair(Node parent, Node child) {
                 // noop
             }
 
@@ -146,7 +144,7 @@ public class Graph<T> {
             node.setVisited();
             for (Node<T> child : node.getAllChildren()) {
                 if (child.isVisited()) continue;
-                action.forEachChildren(node, child);
+                action.forEachParentChildPair(node, child);
                 childrenQueue.insert(child);
                 child.setVisited();
             }

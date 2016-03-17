@@ -86,7 +86,7 @@ public class SimpleTest {
         }
 
         @Override
-        public void forEachChildren(Node parent, Node children) {
+        public void forEachParentChildPair(Node parent, Node children) {
             Node<Student> studentParent = (Node<Student>)parent;
             Node<Student> studentChild = (Node<Student>)children;
 //            System.out.println("Parent: "+studentParent.getValue().name +" Child: "+studentChild.getValue().name);

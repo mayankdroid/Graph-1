@@ -44,7 +44,7 @@ public class ShortestDistance {
             }
 
             @Override
-            public void forEachChildren(Node parent, Node children) {
+            public void forEachParentChildPair(Node parent, Node children) {
                 Node<NodeValue>childNode = (Node<NodeValue>)children;
                 Node<NodeValue>parentNode = (Node<NodeValue>)parent;
                 int nodeDistance = parentNode.getValue().distance+1;
