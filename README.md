@@ -7,6 +7,10 @@ the users want to solve a graph related problem without creating the graph relat
 
 ## How to use
 ---------------
+### Getting Started
+To get started look into the generated package. The Solution.java contains Solution class which has all the required code.
+This file has been gererated from the code and has been minified so that it can be used in a single file. do not modify this code
+unless you know what you are doing The entry point is the main method which will be un-collapsed and you can start writing your code there.
 
 ### Creating a new graph
 
@@ -132,8 +136,16 @@ graph traversal. Check examples/ShortestDistance.java for further details.
 
 Returns the node reference given the hashcode of the object. check example/ShortestDistance.java for details.
 
+##Contributing to the code
+----------------------------
+If you want to make any changes to this code do not modify the Solution.java file since it is the generated one. Modify the code in the Graph package and run
+generateBP.ps1 file. I am yet to write a corresponding file for bash. Contribution on the same will be nice.
+
+The minifier is a little buggy and it wont work if your block comments have a line not starting with a *.
+Also ensure that you dont start a code line with a asterisk either.
+
 ##Contributors
 ---------------
  Rohit Kalhans <mailto:rohit.kalhans@gmail.com>
 
-Feel free to contrubute and feedback is welcome.
+Feel free to contribute and your feedback is always welcome.
