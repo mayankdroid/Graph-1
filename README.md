@@ -1,8 +1,6 @@
 #Graph
-=======
+--------
 
-## Summary
------------
 This is a boiler-plate for Graph related questions which are asked in most coding competitions. The current implementation enables
 the user to plug-in the business logic as a saperate class, by following simple procedure. This is highly useful in scenarios where
 the users want to solve a graph related problem without creating the graph related infra.
@@ -97,7 +95,7 @@ Here is an example of a concrete class.
 
  To do a DFS
   ``` java
-        graph.doDFS();
+    graph.doDFS();
   ```
 
 ### Finishing a graph traversal prematurely.
@@ -125,12 +123,12 @@ Check the description in the section below.
 
 Here are a few other utility apis which are useful
 
-#### abortTraversal
+#### graph.abortTraversal()
 
 Aborts the current traversal when called from a callback method of your custom action. This will internally call the resetGraph() api which will remove all traversal related information from the graph. One invoked you cannot resume the
 graph traversal. Check examples/ShortestDistance.java for further details.
 
-#### getNodeWithId
+#### graph.getNodeWithId()
 
 Returns the node reference given the hashcode of the object. check example/ShortestDistance.java for details.
 
